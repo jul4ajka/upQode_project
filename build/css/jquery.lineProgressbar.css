@@ -1,0 +1,41 @@
+/**
+ * jQuery Line Progressbar
+ * Author: KingRayhan<rayhan095@gmail.com>
+ * Author URL: https://electronthemes.com
+ * Version: 1.1.1
+ */
+
+/** Progressbar class css*/
+@font-face {
+    font-family: "Lato bold";
+    src: url("/fonts/Lato/Lato-Bold.ttf");
+}
+
+.progressbar {
+	width: 67%!important;
+    height: 0.4vw;
+    padding-top: 0.2vw;
+    padding-left: 0.2vw;
+	background-color: rgb(255, 255, 255)!important;
+	border: 1px solid lightgray;
+    border-radius: 0px;
+    margin-left: 15vw;
+    margin-top: 0.2vw;
+    margin-bottom: 2.4vw;
+    position: relative;
+}
+
+.proggress{
+	height: 0.2vw!important;
+	width: 0.1vw;
+	background-color: #3498db;
+}
+
+.percentCount{
+	float: right;
+    margin-top: -2.4vw;
+    clear: both;
+    font-weight: bold;
+    font-family: "Lato bold";
+    font-size: 0.9vw;
+}
