@@ -21,7 +21,7 @@ $(window).scroll(function() {
   var position = $(this).scrollTop();
   var section2 = $('#section2');
   $(section2).each(function() {
-      var target = $(this).offset().top;
+      var target = $(this).offset().top - 150;
       var id = $(this).attr('id');
       if (position >= target) {
         $('nav > .main_menu > .main_menu_list > .main_menu_item').removeClass('active');
@@ -37,7 +37,7 @@ $(window).scroll(function() {
   var position = $(this).scrollTop();
   var section3 = $('#section3');
   $(section3).each(function() {
-      var target = $(this).offset().top;
+      var target = $(this).offset().top - 150;
       var id = $(this).attr('id');
       if (position >= target) {
         $('nav > .main_menu > .main_menu_list > .main_menu_item').removeClass('active');
@@ -54,7 +54,7 @@ $(window).scroll(function() {
   
   var section4 = $('#section4');
   $(section4).each(function() {
-      var target = $(this).offset().top;
+      var target = $(this).offset().top - 150;
       var target = 1560; 
       var id = $(this).attr('id');
       if (position >= target) {
