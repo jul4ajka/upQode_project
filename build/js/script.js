@@ -135,6 +135,41 @@ $( document ).ready(function() {
     });
 });
 
+//Form validation
+document.getElementById('name').addEventListener('blur', validateName);
+document.getElementById('email').addEventListener('blur', validateEmail);
+document.getElementById('text').addEventListener('blur', validateText);
+
+function validateName () {
+  const name = document.getElementById('name');
+  const re = /^[A-Za-zА-Яа-я]{2,10}$/;
+  if (!re.test(name.value) || name.value === ""){
+      name.classList.add('notValid');
+  } else {
+      name.classList.remove('notValid');
+  }
+}
+
+function validateEmail (e) {
+  const email = document.getElementById('email');
+  const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+  if (!re.test(email.value) || email.value === "") {
+    email.classList.add('notValid'); 
+  } else {
+    email.classList.remove('notValid');
+    e.preventDefault();
+  }
+}
+
+function validateText () {
+  const text = document.getElementById('text');
+  if (text.value === "") {
+    text.classList.add('notValid');
+  } else {
+    text.classList.remove('notValid');
+  }
+}
+
   
 
 

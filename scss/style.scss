@@ -677,6 +677,10 @@ header {
     }
 } 
 
+.notValid {
+    border: 1px solid red!important;
+}
+
 footer {
     width: 100vw;
     height: 4vw;
@@ -1075,6 +1079,8 @@ footer {
         margin-top: 5vw;
         margin-left: 4vw;
     }
+
+   
 }
 
 
